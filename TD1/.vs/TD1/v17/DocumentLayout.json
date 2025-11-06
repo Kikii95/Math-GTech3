@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\TD1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB42336F-54DA-4758-91DF-7D5B7C6EFDB9}|TD1\\TD1.vcxproj|C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\TD1\\TD1\\TD1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB42336F-54DA-4758-91DF-7D5B7C6EFDB9}|TD1\\TD1.vcxproj|solutionrelative:TD1\\TD1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 253,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TD1.cpp",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\TD1\\TD1\\TD1.cpp",
+              "RelativeDocumentMoniker": "TD1\\TD1.cpp",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\TD1\\TD1\\TD1.cpp",
+              "RelativeToolTip": "TD1\\TD1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-06T07:52:34.497Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
