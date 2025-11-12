@@ -1,0 +1,17 @@
+Partie 2 : Génération d’objet 3D
+L’objectif de cette partie est d’être capable de générer différents objets de différentes
+résolutions et de les afficher à l’écran. Ces objets 3D peuvent être vus comme des Mesh qui
+possèdent simplement une liste de vertices. Plus la résolution du mesh est élevée, plus ce mesh
+contiendra de vertices.
+2.1 Créer un fichier Mesh.cpp/.h dans lequel il y aura la définition d’une structure Vertex
+permettant de définir un point de l’espace 3D et une classe Mesh contenant un vecteur de
+Vertex. Implémenter une fonction Debug() dans la classe Mesh ainsi que dans la structure
+Vertex. Ces fonctions permettront de lister les points qui composent un mesh et leur
+coordonnées.
+Pour tester ces fonctions, on pourra créer un mesh factice ayant des vertices en coordonnées
+{-1, -1, 0}, {-1, 1, 0}, {1, -1, 0} et {1, 1, 0}.
+Ce mesh factice a une résolution de 4 car 4 vertices le composent. Si on voit ces vertices
+comme les coins d’un carré et qu’on souhaite que le mesh ressemble à un carré plein, on peut
+ajouter des vertices au sein de ce mesh pour le densifier. Par exemple, en notant la
+résolution, on peut décrire le mesh comme l’ensemble :
+La manière de décrire un mesh n’est pas unique, c’est une solution parmi d’autres.

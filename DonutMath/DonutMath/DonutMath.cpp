@@ -2,19 +2,33 @@
 //
 
 #include <iostream>
+#include <string>  
+#include "Mesh.h"
 
-int main()
+int main(int argc, char* argv[])
 {
-    std::cout << "Hello World!\n";
+    int meshResolution = 4;
+
+    for (int i = 1; i < argc; ++i) {
+        std::string arg = argv[i];
+
+        if (arg == "-r" && i + 1 < argc) {
+            try {
+                meshResolution = std::stoi(argv[++i]);
+            }
+            catch (...) {
+                std::cerr << "Valeur invalide pour -r, using default : 32\n";
+                meshResolution = 32;
+            }
+        }
+    }
+
+    Mesh* mesh = new Mesh(meshResolution);
+
+    mesh->DebugMesh();
+
+    mesh->GenerateHalfCircle(8);
+
+    delete mesh; 
+    return 0;
 }
-
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
-
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.

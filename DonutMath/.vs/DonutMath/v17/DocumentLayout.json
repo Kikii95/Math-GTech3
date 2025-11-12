@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{60435685-E67B-48FC-A42A-F3FDC4FDF8FF}|DonutMath\\DonutMath.vcxproj|C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\DonutMath\\DonutMath\\DonutMath.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{60435685-E67B-48FC-A42A-F3FDC4FDF8FF}|DonutMath\\DonutMath.vcxproj|solutionrelative:DonutMath\\DonutMath.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60435685-E67B-48FC-A42A-F3FDC4FDF8FF}|DonutMath\\DonutMath.vcxproj|C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\DonutMath\\DonutMath\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{60435685-E67B-48FC-A42A-F3FDC4FDF8FF}|DonutMath\\DonutMath.vcxproj|solutionrelative:DonutMath\\Mesh.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60435685-E67B-48FC-A42A-F3FDC4FDF8FF}|DonutMath\\DonutMath.vcxproj|C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\DonutMath\\DonutMath\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{60435685-E67B-48FC-A42A-F3FDC4FDF8FF}|DonutMath\\DonutMath.vcxproj|solutionrelative:DonutMath\\Mesh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 253,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mesh.cpp",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\DonutMath\\DonutMath\\Mesh.cpp",
+              "RelativeDocumentMoniker": "DonutMath\\Mesh.cpp",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\DonutMath\\DonutMath\\Mesh.cpp",
+              "RelativeToolTip": "DonutMath\\Mesh.cpp",
+              "ViewState": "AgIAABYAAAAAAAAAAAAnwCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-12T07:19:49.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Mesh.h",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\DonutMath\\DonutMath\\Mesh.h",
+              "RelativeDocumentMoniker": "DonutMath\\Mesh.h",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\DonutMath\\DonutMath\\Mesh.h",
+              "RelativeToolTip": "DonutMath\\Mesh.h",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAnwBgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-12T07:12:44.14Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +58,7 @@
               "RelativeDocumentMoniker": "DonutMath\\DonutMath.cpp",
               "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\Math-GTech3\\DonutMath\\DonutMath\\DonutMath.cpp",
               "RelativeToolTip": "DonutMath\\DonutMath.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-06T07:51:43.671Z",
               "EditorCaption": ""
