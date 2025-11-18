@@ -1,24 +1,21 @@
 #include "Mesh.h"
+#include <cmath>
+
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 
 Mesh::Mesh(int meshResolution)
     : resolution(meshResolution)
 {
-    Create({ -1, -1, 0 });
-    Create({ -1,  1, 0 });
-    Create({ 1, -1, 0 });
-    Create({ 1,  1, 0 });
-
 }
 
-void Mesh::Create(const std::vector<int>& v)
+void Mesh::AddVertex(float x, float y, float z)
 {
-    if (v.size() < 3) return;
-
     Vertex vertex;
-    vertex.x = v[0];
-    vertex.y = v[1];
-    vertex.z = v[2];
-
+    vertex.x = x;
+    vertex.y = y;
+    vertex.z = z;
     vertices.push_back(vertex);
 }
 
@@ -32,29 +29,48 @@ void Mesh::DebugMesh() const
     }
 }
 
-void Mesh::GenerateCircle(float radius) {
+void Mesh::GenerateCircle(float radius)
+{
+    vertices.clear();
 
-}
-
-void Mesh::GenerateHalfCircle(float radius) {
-    for (int i = 0; i < radius; i++) {
-        for (int j = 0; j < radius - radius + i; j++) {
-            std::cout << "--";
-        }
-        std::cout << "o" << std::endl;
-    }
-    for (int i = 0; i <= radius; i++) {
-        for (int j = 0; j < radius - i; j++) {
-            std::cout << "--";
-        }
-        std::cout << "o" << std::endl;
+    for (int i = 0; i < resolution; ++i)
+    {
+        float angle = 2.0f * M_PI * i / resolution;
+        float x = radius * std::cos(angle);
+        float y = radius * std::sin(angle);
+        AddVertex(x, y, 0.0f);
     }
 }
 
-void Mesh::GenerateRectangle(float width, float height) {
+void Mesh::GenerateHalfCircle(float radius)
+{
+    vertices.clear();
 
+    for (int i = 0; i <= resolution; ++i)
+    {
+        float angle = M_PI * i / resolution;
+        float x = radius * std::cos(angle);
+        float y = radius * std::sin(angle);
+        AddVertex(x, y, 0.0f);
+    }
 }
 
-void Mesh::GenerateSquare(float size) {
+void Mesh::GenerateRectangle(float width, float height)
+{
+    vertices.clear();
 
+    for (int i = 0; i < resolution; ++i)
+    {
+        for (int j = 0; j < resolution; ++j)
+        {
+            float x = (2.0f * i / (resolution - 1)) - 1.0f;
+            float y = (2.0f * j / (resolution - 1)) - 1.0f;
+            AddVertex(x * width, y * height, 0.0f);
+        }
+    }
+}
+
+void Mesh::GenerateSquare(float size)
+{
+    GenerateRectangle(size, size);
 }

@@ -1,34 +1,22 @@
-// DonutMath.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
-
 #include <iostream>
-#include <string>  
+#include "Settings.h"
+#include "Screen.h"
 #include "Mesh.h"
 
 int main(int argc, char* argv[])
 {
-    int meshResolution = 4;
+    Settings settings(argc, argv);
+    Screen screen(settings);
+    Mesh mesh(settings.GetMeshResolution());
 
-    for (int i = 1; i < argc; ++i) {
-        std::string arg = argv[i];
+    mesh.GenerateCircle(5.0f);
+	//mesh.GenerateHalfCircle(5.0f);
+	//mesh.GenerateRectangle(8.0f, 4.0f);
+	//mesh.GenerateSquare(6.0f);
 
-        if (arg == "-r" && i + 1 < argc) {
-            try {
-                meshResolution = std::stoi(argv[++i]);
-            }
-            catch (...) {
-                std::cerr << "Valeur invalide pour -r, using default : 32\n";
-                meshResolution = 32;
-            }
-        }
-    }
+    screen.Display(mesh);
 
-    Mesh* mesh = new Mesh(meshResolution);
+    std::cin.get();
 
-    mesh->DebugMesh();
-
-    mesh->GenerateHalfCircle(8);
-
-    delete mesh; 
     return 0;
 }
